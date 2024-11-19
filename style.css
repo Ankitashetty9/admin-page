@@ -1,0 +1,242 @@
+/* Header */
+.header {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin: 0;
+}
+
+.user-icon {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.rounded-circle {
+    margin-left: auto;
+    display: flex;
+    align-items: end;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+/* Sidebar */
+.col-md-2 {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.list-group-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.list-group-item .fa {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.list-group-item:hover .fa {
+    color: #007bff;
+}
+
+.list-group-item .badge {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin-left: auto;
+}
+
+.list-group-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+body .list-group-items {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: bold;
+}
+
+li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.badge {
+    background-color: rgb(221, 229, 236);
+    color: black;
+}
+
+.badge:hover {
+    background-color: white;
+}
+
+span {
+    margin: 0;
+}
+
+.text-color-dark {
+    color: black !important;
+}
+
+/* Content */
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+.daily-stats {
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.scanner {
+    max-width: 50%;
+    height: auto;
+}
+
+.stat-value {
+    font-size: 18px;
+}
+
+.revenue-count {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.revenue-graph {
+    color: gray;
+}
+
+/* Default styles for large screens */
+body {
+    font-size: 16px;
+}
+
+/* Extra Large Screens (4K, wide screens) */
+@media (min-width: 1200px) {
+    .logo {
+        width: 200px;
+    }
+
+    .revenue-count {
+        font-size: 2.5rem;
+    }
+}
+
+/* Large Screens (Desktops, laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo {
+        width: 180px;
+    }
+
+    .revenue-count {
+        font-size: 2rem;
+    }
+}
+
+/* Medium Screens (Tablets, smaller laptops) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo {
+        width: 150px;
+    }
+
+    .revenue-count {
+        font-size: 1.8rem;
+    }
+
+    .daily-stats {
+        font-size: 22px;
+    }
+
+    .scanner {
+        width: 100%;
+    }
+}
+
+/* Small Screens (Phones in landscape mode) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .logo {
+        width: 120px;
+    }
+
+    .revenue-count {
+        font-size: 1.6rem;
+    }
+
+    .daily-stats {
+        font-size: 20px;
+    }
+
+    .list-group-item {
+        font-size: 0.9rem;
+    }
+
+    .scanner {
+        width: 100%;
+    }
+}
+
+/* Extra Small Screens (Phones in portrait mode) */
+@media (max-width: 575px) {
+    .logo {
+        width: 100px;
+    }
+
+    .revenue-count {
+        font-size: 1.4rem;
+    }
+
+    .daily-stats {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .list-group-item {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .scanner {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
